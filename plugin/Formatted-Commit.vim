@@ -3,7 +3,7 @@ function! s:Promote_with_prefix( commit_message )
   let prefix = system( "echo " . branch_name . "| grep -oh 'W[TO]-[0-9]*' | tr -d '\n' " )
   let new_commit_message = "JIRA:" . prefix . " | " . a:commit_message
   echom new_commit_message
-  execute "! git commit -am '". new_commit_message. "'"
+  execute "silent ! git commit -am '". new_commit_message. "'"
   execute "! git push origin " . branch_name
 endfunction
 
