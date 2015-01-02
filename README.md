@@ -8,7 +8,7 @@ Configuration
 * Define the regex to extract from branch name in vimrc
  * example: <pre> let g:branch_regex = "\'W[TO]-[0-9]*\'" </pre>
 * Define the commit-prefix string in vimrc
- * example: <pre> let g:commit_prefix = 'JIRA' </pre>
+ * example: <pre> let g:commit_prefix = 'JIRA:' </pre>
  
 Example :-
 =======
