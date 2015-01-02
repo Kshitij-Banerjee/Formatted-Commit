@@ -3,13 +3,17 @@ Formatted-Commit
 
 A vim plugin to format your commit-message and promote from vim.
 
-Usage
+Configuration
 =======
-* Create branch names that contain the JIRA ticket number 
-* Example :-
- * branch-name-WT-001
- * branch-name-WO-001
+* Define the regex to extract from branch name in vimrc
+ * example: <pre> let g:branch_regex = "\'W[TO]-[0-9]*\'" </pre>
+* Define the commit-prefix string in vimrc
+ * example: <pre> let g:commit_prefix = 'JIRA' </pre>
+ 
+Example :-
+=======
+* branch-name-WO-001
 * promote from vim using the following command
- * <pre>:Promote "your commit message"</pre>
-* The JIRA ticket number is prefixed and the final commit will be like so
- * <pre>JIRA:WO-001 | your commit message</pre>
+ * <pre>:Promote your_commit_message</pre>
+* The commit is formatted as so.
+ * <pre>JIRA:WO-001 | your_commit_message</pre>
