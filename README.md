@@ -17,3 +17,10 @@ Example :-
  * <pre>:Promote your_commit_message</pre>
 * The commit is formatted as so.
  * <pre>JIRA:WO-001 | your_commit_message</pre>
+
+Installation
+==============
+* Directly do a git clone into your ~/.vim/plugin directory
+* Install using your favourite method like Vundle/Pathogen 
+ * https://github.com/gmarik/Vundle.vim 
+ * https://github.com/tpope/vim-pathogen
