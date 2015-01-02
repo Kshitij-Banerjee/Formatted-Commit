@@ -1,7 +1,7 @@
 Formatted-Commit
 ================
 
-Format your commit-message and promote from vim
+A vim plugin to format your commit-message and promote from vim.
 
 Usage
 =======
